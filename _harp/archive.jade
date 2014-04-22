@@ -1,0 +1,5 @@
+a(href="/") home
+
+for post, slug in public.posts._data
+  a(href="/posts/#{ slug }")
+    h2= post.title
