@@ -1,0 +1,7 @@
+{
+  "globals": {
+    "title": "Justin's Test title",
+    "name"  : "John Doe",
+    "uri": "http://example.com"
+  }
+}
