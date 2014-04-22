@@ -3,7 +3,6 @@
     "title": "Example Title"
   },
   "article-two": {
-    // "layout": "_another-one",
     "title": "Another Example Title"
   }
 }
