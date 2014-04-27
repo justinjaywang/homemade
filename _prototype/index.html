@@ -13,13 +13,13 @@
     <link href="dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="navbar-fixed-top.css" rel="stylesheet">
+    <!-- <link href="navbar-fixed-top.css" rel="stylesheet"> -->
 
     <!-- Just for debugging purposes. Don't actually copy this line! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <!-- // <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script> -->
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -69,20 +69,57 @@
       </div>
     </div>
 
-    <img src="images/1-pickles.jpg" class="img-responsive">
+    <img src="images/1-pickles.jpg" class="img-responsive img-padded" id="img1">
 
     <div class="container">
-
       <div class="row">
-        <div class="col-xs-12">
-          <h1>Title</h1>
-          <p>Description</p>
+        <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+          <h1>Pan-seared rainbow trout</h1>
+          <p>'Potlikker' greens and white beans</p>
+          <p>Trout fillets are dredged lightly in cornmeal and seasoned with paprika and herbs before being pan-seared to a golden hue. Served atop cannellini beans tossed with kale and mustard greens sautéed with bits of ham from the hock and shallots. This protein-rich dish is also a major provider of anti-oxidants and vitamins C, A, & K. Finished with a Southern-inspired potlikker sauce made from braised ham hock, vinegar, and spices.</p>
+          <ul>
+            <li>Farmed Rainbow Trout</li>
+            <li>Kale</li>
+            <li>Mustard greens</li>
+            <li>Ham</li>
+            <li>Navy Beans</li>
+            <li>Chicken stock</li>
+            <li>Black pepper</li>
+            <li>Cider vinegar</li>
+            <li>Kosher Salt</li>
+            <li>Shallots</li>
+            <li>Cornmeal</li>
+            <li>Canola Oil</li>
+          </ul>
         </div>
       </div>
-
     </div> <!-- /container -->
 
-    <img src="images/2-sardines.jpg" class="img-responsive">
+    <img src="images/2-sardines.jpg" class="img-responsive img-padded" id="img2">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+          <h1>Pan-seared rainbow trout</h1>
+          <p>'Potlikker' greens and white beans</p>
+          <p>Trout fillets are dredged lightly in cornmeal and seasoned with paprika and herbs before being pan-seared to a golden hue. Served atop cannellini beans tossed with kale and mustard greens sautéed with bits of ham from the hock and shallots. This protein-rich dish is also a major provider of anti-oxidants and vitamins C, A, & K. Finished with a Southern-inspired potlikker sauce made from braised ham hock, vinegar, and spices.</p>
+          <ul>
+            <li>Farmed Rainbow Trout</li>
+            <li>Kale</li>
+            <li>Mustard greens</li>
+            <li>Ham</li>
+            <li>Navy Beans</li>
+            <li>Chicken stock</li>
+            <li>Black pepper</li>
+            <li>Cider vinegar</li>
+            <li>Kosher Salt</li>
+            <li>Shallots</li>
+            <li>Cornmeal</li>
+            <li>Canola Oil</li>
+          </ul>
+        </div>
+      </div>
+    </div> <!-- /container -->
 
 
     <!-- Bootstrap core JavaScript
@@ -90,5 +127,18 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="dist/js/bootstrap.min.js"></script>
+    <script src="js/color-thief.min.js"></script>
+    <script type="text/javascript">
+
+      function colorChange(){
+        //Be sure to include <img id="coverImage" src="" alt=""/>
+        var img1 = $('#img1')[0];
+        var colorThief = new ColorThief();
+        var color = colorThief.getColor(img1);
+      }
+      $(document).ready(function() {
+        colorChange();
+      });
+    </script>
   </body>
 </html>
