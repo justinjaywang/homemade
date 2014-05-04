@@ -4,13 +4,68 @@
 
 .post {
   padding-bottom: (@grid-gutter-width * 2);
+  & .post-cover {
+    position: relative;
+    left: 0;
+    right: 0;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    display: table;
+    width: 100vw;
+    height: 74.691358vw;
+    max-height: 100vh;
+    & .post-header {
+      text-align: center;
+      display: table-cell;
+      vertical-align: bottom;
+      & .post-title {
+        color: rgb(255,255,255);
+      }
+      & .post-subtitle {
+        color: rgba(255,255,255,0.65);
+      }
+    }
+  }
+  & .post-details {
+    margin-top: (@grid-gutter-width);
+  }
 }
 
 #post1 {
-  background: rgb(213,210,203);
+  background: rgb(219,217,213);
+  color: rgb(153,133,121);
+  & .post-cover {
+    background-image: url('../../images/1-pickles.jpg');
+  }
 }
 
 #post2 {
-  background: rgb(61,59,56);
-  color: #ccc;
+  background: rgb(57,55,53);
+  color: rgb(211,218,214);
+  & .post-cover {
+    background-image: url('../../images/2-sardines.jpg');
+  }
+}
+
+h1 {
+  font-family: @font-family-sans-serif;
+  font-weight: 700;
+}
+
+.background-image {
+  position: relative;
+  // display: table;
+  left: 0;
+  // max-height: 100%;
+  // width: 100%;
+  // background-color: #222;
+  // background: no-repeat 50% 50%;
+  color: rgba(255, 255, 85, 1);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-position: center;
 }
