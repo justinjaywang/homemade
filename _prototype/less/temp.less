@@ -3,7 +3,7 @@
 // --------------------------------------------------
 
 .post {
-  padding-bottom: (@grid-gutter-width * 2);
+  padding-bottom: (@grid-gutter-width * 3);
   & .post-cover {
     position: relative;
     left: 0;
@@ -11,7 +11,7 @@
     display: table;
     width: 100vw;
     height: 74.691358vw;
-    max-height: 100vh;
+    max-height: 94vh;
     & .post-cover-image {
       -webkit-background-size: cover;
       -moz-background-size: cover;
@@ -36,21 +36,21 @@
       text-align: center;
       display: table-cell;
       vertical-align: bottom;
-      padding-top: @grid-gutter-width;
-      padding-bottom: @grid-gutter-width;
+      padding-top: (@grid-gutter-width * 2);
+      padding-bottom: (@grid-gutter-width * 2);
+
       & .post-title {
         color: rgb(255,255,255);
+        margin-bottom: (@line-height-computed / 4);
       }
       & .post-subtitle {
         color: rgba(255,255,255,0.65);
+        margin-bottom: 0;
       }
     }
   }
-  & .post-cover, .post-cover-image {
-
-  }
   & .post-details {
-    margin-top: (@grid-gutter-width);
+    margin-top: (@grid-gutter-width * 2);
   }
 }
 
@@ -68,9 +68,4 @@
   & .post-cover-image {
     background-image: url('../../images/2-sardines.jpg');
   }
-}
-
-h1 {
-  font-family: @font-family-sans-serif;
-  font-weight: 700;
 }

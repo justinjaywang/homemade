@@ -8,7 +8,7 @@
   'use strict';
 
   var defaults = {
-    opacityStart: 0,
+    opacityStart: 0.2,
     opacityEnd: 0.8,
     selector: '.post-cover-fader'
   };
