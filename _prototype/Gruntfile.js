@@ -104,7 +104,8 @@ module.exports = function (grunt) {
           'js/scrollspy.js',
           'js/tab.js',
           'js/affix.js',
-          'js/fader.js'
+          'js/fader.js',
+          'js/translator.js',
         ],
         dest: 'dist/js/<%= pkg.name %>.js'
       }
