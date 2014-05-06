@@ -6117,8 +6117,18 @@ button.close {
   -webkit-background-size: cover;
           background-size: cover;
 }
+.post .post-cover .post-cover-fader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+}
 .post .post-cover .post-header {
   display: table-cell;
+  padding-top: 30px;
+  padding-bottom: 30px;
   text-align: center;
   vertical-align: bottom;
 }
@@ -6148,13 +6158,5 @@ button.close {
 h1 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
-}
-.background-image {
-  position: relative;
-  left: 0;
-  color: #ff5;
-  background-position: center;
-  -webkit-background-size: cover;
-          background-size: cover;
 }
 /*# sourceMappingURL=bootstrap.css.map */
