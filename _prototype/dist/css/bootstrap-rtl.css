@@ -7518,7 +7518,7 @@ button.close {
   display: table;
   width: 100vw;
   height: 74.691358vw;
-  max-height: 100vh;
+  max-height: 94vh;
 }
 
 .post .post-cover .post-cover-image {
@@ -7575,6 +7575,10 @@ button.close {
   background-image: url('../../images/1-wings.jpg');
 }
 
+#post1 .post-cover-fader {
+  background: #8c5533;
+}
+
 #post2 {
   color: #795939;
   background: #cdad81;
@@ -7582,6 +7586,10 @@ button.close {
 
 #post2 .post-cover-image {
   background-image: url('../../images/2-chicken.jpg');
+}
+
+#post2 .post-cover-fader {
+  background: #795939;
 }
 
 #post3 {
@@ -7593,6 +7601,10 @@ button.close {
   background-image: url('../../images/3-root.jpg');
 }
 
+#post3 .post-cover-fader {
+  background: #5d2a19;
+}
+
 #post4 {
   color: #171412;
   background: #767477;
@@ -7602,6 +7614,10 @@ button.close {
   background-image: url('../../images/4-brussels-sprouts.jpg');
 }
 
+#post4 .post-cover-fader {
+  background: #171412;
+}
+
 #post5 {
   color: #743d1b;
   background: #e0cda2;
@@ -7609,6 +7625,10 @@ button.close {
 
 #post5 .post-cover-image {
   background-image: url('../../images/5-pork-cutlet.jpg');
+}
+
+#post5 .post-cover-fader {
+  background: #743d1b;
 }
 
 /*# sourceMappingURL=bootstrap.css.map */

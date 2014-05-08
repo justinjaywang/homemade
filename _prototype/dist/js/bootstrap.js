@@ -2123,14 +2123,14 @@ if (typeof jQuery === 'undefined') { throw new Error('Bootstrap\'s JavaScript re
     fader: '.post-cover-fader',
     fadeStart: 0,
     fadeMid: 0.12,
-    fadeEnd: 0.6
+    fadeEnd: 0.84
   };
 
   $.fn.transitioner = function (options) {
 
     var settings = $.extend(defaults, options);
 
-    var updateOpacity = function () {
+    var updateTransition = function () {
 
       var top = $(window).scrollTop();
       var bottom = top + $(window).height();
@@ -2161,14 +2161,13 @@ if (typeof jQuery === 'undefined') { throw new Error('Bootstrap\'s JavaScript re
     };
 
     var pos2Opacity = function(windowTop, windowBottom, elementTop, elementBottom) {
+
       var percentage;
-      // var elementMid = (elementBottom + elementTop) / 2;
-      // var elementMidTop = (elementBottom + 3*elementTop) / 4;
       var elementMid = (4*elementBottom + elementTop) / 5;
+
       if (windowBottom < elementTop) { // image not scrolled to
         return 0;
       } else if (windowBottom < elementMid) { // image partly scrolled to
-        // percentage = (windowBottom - elementTop) / (elementBottom - elementTop);
         percentage = (windowBottom - elementTop) / (elementMid - elementTop);
         return percentage;
       // } else if (windowTop < elementTop) { // image in full sight
@@ -2180,6 +2179,7 @@ if (typeof jQuery === 'undefined') { throw new Error('Bootstrap\'s JavaScript re
         // return 0;
         return 1;
       }
+
     };
 
     var pos2Background = function(windowBottom, elementBottom, colorPrev, colorCurr) {
@@ -2193,10 +2193,12 @@ if (typeof jQuery === 'undefined') { throw new Error('Bootstrap\'s JavaScript re
     var pos2FaderOpacity = function(windowTop, windowBottom, elementTop, elementBottom) {
 
       var percentage;
+      var elementMid = (4*elementBottom + elementTop) / 5;
+
       if (windowBottom < elementTop) { // image not scrolled to
         return settings.fadeStart;
-      } else if (windowBottom < elementBottom) { // image partly scrolled to
-        percentage = (windowBottom - elementTop) / (elementBottom - elementTop);
+      } else if (windowBottom < elementMid) { // image partly scrolled to
+        percentage = (windowBottom - elementTop) / (elementMid - elementTop);
         return percentage * (settings.fadeMid - settings.fadeStart) + settings.fadeStart;
       } else if (windowTop < elementTop) { // image in full sight
         return settings.fadeMid;
@@ -2207,25 +2209,10 @@ if (typeof jQuery === 'undefined') { throw new Error('Bootstrap\'s JavaScript re
         return settings.fadeEnd;
       }
 
-      // if (windowBottom < elementTop) { // image not scrolled to
-      //   return settings.fadeStart;
-      // } else if (windowBottom < elementBottom) { // image partly scrolled to
-      //   var percentage = (windowBottom - elementTop) / (elementBottom - elementTop);
-      //   return percentage * (settings.fadeEnd - settings.fadeStart) + settings.fadeStart;
-      // } else { // image in full sight or scrolled past
-      //   return settings.fadeEnd;
-      // }
-
-      //   return settings.fadeStart;
-      // } else if (windowTop < elementBottom) {
-      //   var percentage = (windowTop - elementTop) / (elementBottom - elementTop);
-      //   return percentage * (settings.fadeEnd - settings.fadeStart) + settings.fadeStart;
-      // } else {
-      //   return settings.fadeEnd;
-      // }
     };
 
-    $(window).on('scroll', updateOpacity).scroll();
+    $(window).on('scroll', updateTransition).scroll();
+    $(window).on('resize', updateTransition);
 
   };
 
