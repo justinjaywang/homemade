@@ -9,7 +9,7 @@
 
   var defaults = {
     opacityStart: 0.18,
-    opacityEnd: 0.72,
+    opacityEnd: 1,
     selector: '.post-cover-fader'
   };
 

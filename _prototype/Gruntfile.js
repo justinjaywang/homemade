@@ -106,6 +106,7 @@ module.exports = function (grunt) {
           'js/affix.js',
           'js/fader.js',
           'js/translator.js',
+          'js/transitioner.js'
         ],
         dest: 'dist/js/<%= pkg.name %>.js'
       }

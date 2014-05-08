@@ -1162,8 +1162,8 @@ body {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 20px;
   line-height: 1.6;
-  color: #333;
-  background-color: #fff;
+  color: #555;
+  background-color: #000;
 }
 
 input,
@@ -1220,7 +1220,7 @@ img {
   height: auto;
   padding: 4px;
   line-height: 1.6;
-  background-color: #fff;
+  background-color: #000;
   border: 1px solid #ddd;
   border-radius: 4px;
   -webkit-transition: all .2s ease-in-out;
@@ -2738,7 +2738,7 @@ th {
 }
 
 .table .table {
-  background-color: #fff;
+  background-color: #000;
 }
 
 .table-condensed > thead > tr > th,
@@ -3339,7 +3339,7 @@ select[multiple].input-lg {
   display: block;
   margin-top: 5px;
   margin-bottom: 10px;
-  color: #737373;
+  color: #959595;
 }
 
 @media (min-width: 768px) {
@@ -4499,7 +4499,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-tabs > li.active > a:focus {
   color: #555;
   cursor: default;
-  background-color: #fff;
+  background-color: #000;
   border: 1px solid #ddd;
   border-bottom-color: transparent;
 }
@@ -4554,7 +4554,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .nav-tabs.nav-justified > .active > a,
   .nav-tabs.nav-justified > .active > a:hover,
   .nav-tabs.nav-justified > .active > a:focus {
-    border-bottom-color: #fff;
+    border-bottom-color: #000;
   }
 }
 
@@ -4639,7 +4639,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .nav-tabs-justified > .active > a,
   .nav-tabs-justified > .active > a:hover,
   .nav-tabs-justified > .active > a:focus {
-    border-bottom-color: #fff;
+    border-bottom-color: #000;
   }
 }
 
@@ -5635,7 +5635,7 @@ a.list-group-item.active > .badge,
   padding: 4px;
   margin-bottom: 32px;
   line-height: 1.6;
-  background-color: #fff;
+  background-color: #000;
   border: 1px solid #ddd;
   border-radius: 4px;
   -webkit-transition: all .2s ease-in-out;
@@ -5657,7 +5657,7 @@ a.thumbnail.active {
 
 .thumbnail .caption {
   padding: 9px;
-  color: #333;
+  color: #555;
 }
 
 .alert {
@@ -7518,7 +7518,7 @@ button.close {
   display: table;
   width: 100vw;
   height: 74.691358vw;
-  max-height: 94vh;
+  max-height: 100vh;
 }
 
 .post .post-cover .post-cover-image {
@@ -7539,6 +7539,7 @@ button.close {
   width: 100%;
   height: 100%;
   background: #000;
+  opacity: 0;
 }
 
 .post .post-cover .post-header {
@@ -7566,21 +7567,48 @@ button.close {
 }
 
 #post1 {
-  color: #998579;
-  background: #dbd9d5;
+  color: #8c5533;
+  background: #cecbcd;
 }
 
 #post1 .post-cover-image {
-  background-image: url('../../images/1-pickles.jpg');
+  background-image: url('../../images/1-wings.jpg');
 }
 
 #post2 {
-  color: #a7704d;
-  background: #f0efe5;
+  color: #795939;
+  background: #cdad81;
 }
 
 #post2 .post-cover-image {
-  background-image: url('../../images/2-daikon.jpg');
+  background-image: url('../../images/2-chicken.jpg');
+}
+
+#post3 {
+  color: #5d2a19;
+  background: #9b9695;
+}
+
+#post3 .post-cover-image {
+  background-image: url('../../images/3-root.jpg');
+}
+
+#post4 {
+  color: #171412;
+  background: #767477;
+}
+
+#post4 .post-cover-image {
+  background-image: url('../../images/4-brussels-sprouts.jpg');
+}
+
+#post5 {
+  color: #743d1b;
+  background: #e0cda2;
+}
+
+#post5 .post-cover-image {
+  background-image: url('../../images/5-pork-cutlet.jpg');
 }
 
 /*# sourceMappingURL=bootstrap.css.map */
