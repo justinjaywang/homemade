@@ -1162,7 +1162,7 @@ body {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 20px;
   line-height: 1.6;
-  color: #fff;
+  color: #555;
   background-color: #fff;
 }
 
@@ -3339,7 +3339,7 @@ select[multiple].input-lg {
   display: block;
   margin-top: 5px;
   margin-bottom: 10px;
-  color: #fff;
+  color: #959595;
 }
 
 @media (min-width: 768px) {
@@ -5657,7 +5657,7 @@ a.thumbnail.active {
 
 .thumbnail .caption {
   padding: 9px;
-  color: #fff;
+  color: #555;
 }
 
 .alert {
@@ -7539,7 +7539,6 @@ button.close {
   width: 100%;
   height: 100%;
   background: #000;
-  background: inherit;
   opacity: 0;
 }
 
@@ -7547,7 +7546,7 @@ button.close {
   display: table-cell;
   padding-top: 90px;
   padding-bottom: 90px;
-  color: inherit;
+  color: #fff;
   text-align: center;
   vertical-align: bottom;
 }
@@ -7567,41 +7566,20 @@ button.close {
   padding-bottom: 90px;
 }
 
-#post1 {
-  color: yellow;
-  background: #f00;
-}
-
 #post1 .post-cover-image {
   background-image: url('../../images/1-wings.jpg');
-}
-
-#post2 {
-  background: #1e130e;
 }
 
 #post2 .post-cover-image {
   background-image: url('../../images/2-chicken.jpg');
 }
 
-#post3 {
-  background: #4a464b;
-}
-
 #post3 .post-cover-image {
   background-image: url('../../images/3-root.jpg');
 }
 
-#post4 {
-  background: #171412;
-}
-
 #post4 .post-cover-image {
   background-image: url('../../images/4-brussels-sprouts.jpg');
-}
-
-#post5 {
-  background: #743d1b;
 }
 
 #post5 .post-cover-image {

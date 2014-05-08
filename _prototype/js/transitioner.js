@@ -11,8 +11,8 @@
     image: '.post-cover-image',
     fader: '.post-cover-fader',
     fadeStart: 0,
-    fadeMid: 0.4,
-    fadeEnd: 0.4
+    fadeMid: 0.3,
+    fadeEnd: 0.7
   };
 
   $.fn.transitioner = function (options) {
