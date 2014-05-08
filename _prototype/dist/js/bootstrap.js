@@ -2163,7 +2163,8 @@ if (typeof jQuery === 'undefined') { throw new Error('Bootstrap\'s JavaScript re
     var pos2Opacity = function(windowTop, windowBottom, elementTop, elementBottom) {
 
       var percentage;
-      var elementMid = (4*elementBottom + elementTop) / 5;
+      // var elementMid = (4*elementBottom + elementTop) / 5;
+      var elementMid = elementBottom;
 
       if (windowBottom < elementTop) { // image not scrolled to
         return 0;
@@ -2193,7 +2194,8 @@ if (typeof jQuery === 'undefined') { throw new Error('Bootstrap\'s JavaScript re
     var pos2FaderOpacity = function(windowTop, windowBottom, elementTop, elementBottom) {
 
       var percentage;
-      var elementMid = (4*elementBottom + elementTop) / 5;
+      // var elementMid = (4*elementBottom + elementTop) / 5;
+      var elementMid = elementBottom;
 
       if (windowBottom < elementTop) { // image not scrolled to
         return settings.fadeStart;

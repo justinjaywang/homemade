@@ -39,71 +39,104 @@
       vertical-align: bottom;
       padding-top: (@grid-gutter-width * 3);
       padding-bottom: (@grid-gutter-width * 3);
-
+      color: inherit;
       & .post-title {
-        color: rgb(255,255,255);
         margin-bottom: (@line-height-computed / 4);
       }
       & .post-subtitle {
-        color: rgba(255,255,255,0.65);
         margin-bottom: 0;
         font-weight: 200;
+        opacity: 0.65;
       }
     }
   }
   & .post-details {
-    padding-top: (@grid-gutter-width * 1.5);
+    padding-top: (@grid-gutter-width * 3);
     padding-bottom: (@grid-gutter-width * 3);
   }
 }
+
+@post1-background: rgb(206, 203, 205);
+@post1-color: rgb(56, 43, 38);
 
 #post1 {
   & .post-cover-image {
     background-image: url('../../images/1-wings.jpg');
   }
+  background: @post1-background;
+  color: @post1-color;
   & .post-cover-fader {
-    background: rgb(140, 85, 51);
+    background: @post1-color;
   }
-  background: rgb(206, 203, 205);
-  color: rgb(140, 85, 51);
+  & .post-header {
+    color: @post1-background;
+  }
 }
+
+@post2-background: rgb(205, 173, 129);
+@post2-color: rgb(61, 30, 17);
+
 #post2 {
   & .post-cover-image {
     background-image: url('../../images/2-chicken.jpg');
   }
+  background: @post2-background;
+  color: @post2-color;
   & .post-cover-fader {
-    background: rgb(121, 89, 57);
+    background: @post2-color;
   }
-  background: rgb(205, 173, 129);
-  color: rgb(121, 89, 57);
+  & .post-header {
+    color: @post2-background;
+  }
 }
+
+@post3-background: rgb(216, 215, 218);
+@post3-color: rgb(93, 42, 25);
+
 #post3 {
   & .post-cover-image {
     background-image: url('../../images/3-root.jpg');
   }
+  background: @post3-background;
+  color: @post3-color;
   & .post-cover-fader {
-    background: rgb(93, 42, 25);
+    background: @post3-color;
   }
-  background: rgb(155, 150, 149);
-  color: rgb(93, 42, 25);
+  & .post-header {
+    color: @post3-background;
+  }
 }
+
+@post4-background: rgb(217, 203, 175);
+@post4-color: rgb(23, 20, 18);
+
 #post4 {
   & .post-cover-image {
     background-image: url('../../images/4-brussels-sprouts.jpg');
   }
+  background: @post4-background;
+  color: @post4-color;
   & .post-cover-fader {
-    background: rgb(23, 20, 18);
+    background: @post4-color;
   }
-  background: rgb(118, 116, 119);
-  color: rgb(23, 20, 18);
+  & .post-header {
+    color: @post4-background;
+  }
 }
+
+@post5-background: rgb(224, 205, 162);
+@post5-color: rgb(116, 61, 27);
+
 #post5 {
   & .post-cover-image {
     background-image: url('../../images/5-pork-cutlet.jpg');
   }
+  background: @post5-background;
+  color: @post5-color;
   & .post-cover-fader {
-    background: rgb(116, 61, 27);
+    background: @post5-color;
   }
-  background: rgb(224, 205, 162);
-  color: rgb(116, 61, 27);
+  & .post-header {
+    color: @post5-background;
+  }
 }

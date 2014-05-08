@@ -52,7 +52,8 @@
     var pos2Opacity = function(windowTop, windowBottom, elementTop, elementBottom) {
 
       var percentage;
-      var elementMid = (4*elementBottom + elementTop) / 5;
+      // var elementMid = (4*elementBottom + elementTop) / 5;
+      var elementMid = elementBottom;
 
       if (windowBottom < elementTop) { // image not scrolled to
         return 0;
@@ -82,7 +83,8 @@
     var pos2FaderOpacity = function(windowTop, windowBottom, elementTop, elementBottom) {
 
       var percentage;
-      var elementMid = (4*elementBottom + elementTop) / 5;
+      // var elementMid = (4*elementBottom + elementTop) / 5;
+      var elementMid = elementBottom;
 
       if (windowBottom < elementTop) { // image not scrolled to
         return settings.fadeStart;
