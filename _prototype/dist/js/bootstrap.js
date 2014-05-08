@@ -2024,8 +2024,8 @@ if (typeof jQuery === 'undefined') { throw new Error('Bootstrap\'s JavaScript re
   'use strict';
 
   var defaults = {
-    opacityStart: 0,
-    opacityEnd: 0.8,
+    opacityStart: 0.18,
+    opacityEnd: 0.72,
     selector: '.post-cover-fader'
   };
 
@@ -2050,7 +2050,8 @@ if (typeof jQuery === 'undefined') { throw new Error('Bootstrap\'s JavaScript re
       if (windowTop < elementTop) {
         return settings.opacityStart;
       } else if (windowTop < elementBottom) {
-        return  (windowTop - elementTop) / (elementBottom - elementTop) * settings.opacityEnd;
+        var percentage = (windowTop - elementTop) / (elementBottom - elementTop);
+        return percentage * (settings.opacityEnd - settings.opacityStart) + settings.opacityStart;
       } else {
         return settings.opacityEnd;
       }
@@ -2076,8 +2077,6 @@ if (typeof jQuery === 'undefined') { throw new Error('Bootstrap\'s JavaScript re
   };
 
   $.fn.translator = function (options) {
-
-    console.log('gets called')
 
     var settings = $.extend(defaults, options);
 

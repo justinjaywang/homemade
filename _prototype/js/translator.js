@@ -13,8 +13,6 @@
 
   $.fn.translator = function (options) {
 
-    console.log('gets called')
-
     var settings = $.extend(defaults, options);
 
     var updateTranslate = function () {

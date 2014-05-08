@@ -3,7 +3,6 @@
 // --------------------------------------------------
 
 .post {
-  padding-bottom: (@grid-gutter-width * 3);
   & .post-cover {
     position: relative;
     left: 0;
@@ -11,6 +10,7 @@
     display: table;
     width: 100vw;
     height: 74.691358vw;
+    // max-height: 100vh;
     max-height: 94vh;
     & .post-cover-image {
       -webkit-background-size: cover;
@@ -36,8 +36,8 @@
       text-align: center;
       display: table-cell;
       vertical-align: bottom;
-      padding-top: (@grid-gutter-width * 2);
-      padding-bottom: (@grid-gutter-width * 2);
+      padding-top: (@grid-gutter-width * 3);
+      padding-bottom: (@grid-gutter-width * 3);
 
       & .post-title {
         color: rgb(255,255,255);
@@ -46,26 +46,62 @@
       & .post-subtitle {
         color: rgba(255,255,255,0.65);
         margin-bottom: 0;
+        font-weight: 200;
       }
     }
   }
   & .post-details {
-    margin-top: (@grid-gutter-width * 2);
+    padding-top: (@grid-gutter-width * 1.5);
+    padding-bottom: (@grid-gutter-width * 3);
+
+    // min-height: 100vh;
   }
 }
 
+// #post1 {
+//   background: rgb(219,217,213);
+//   color: rgb(153,133,121);
+//   & .post-cover-image {
+//     background-image: url('../../images/1-pickles.jpg');
+//   }
+// }
+
+// #post2 {
+//   background: rgb(240,239,229);
+//   color: rgb(167,112,77);
+//   & .post-cover-image {
+//     background-image: url('../../images/2-daikon.jpg');
+//   }
+// }
+
 #post1 {
-  background: rgb(219,217,213);
-  color: rgb(153,133,121);
+  // background: rgb(206, 203, 205);
+  // color: rgb(140, 85, 51);
   & .post-cover-image {
-    background-image: url('../../images/1-pickles.jpg');
+    background-image: url('../../images/1-wings.jpg');
   }
 }
 
 #post2 {
-  background: rgb(57,55,53);
-  color: rgb(211,218,214);
+  // background: rgb(205, 173, 129);
+  // color: rgb(121, 89, 57);
   & .post-cover-image {
-    background-image: url('../../images/2-sardines.jpg');
+    background-image: url('../../images/2-chicken.jpg');
+  }
+}
+
+#post3 {
+  // background: rgb(155, 150, 149);
+  // color: rgb(93, 42, 25);
+  & .post-cover-image {
+    background-image: url('../../images/3-root.jpg');
+  }
+}
+
+#post4 {
+  // background: rgb(118, 116, 119);
+  // color: rgb(73, 67, 71);
+  & .post-cover-image {
+    background-image: url('../../images/4-brussels-sprouts.jpg');
   }
 }

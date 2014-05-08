@@ -8,8 +8,8 @@
   'use strict';
 
   var defaults = {
-    opacityStart: 0.2,
-    opacityEnd: 0.8,
+    opacityStart: 0.18,
+    opacityEnd: 0.72,
     selector: '.post-cover-fader'
   };
 
@@ -34,7 +34,8 @@
       if (windowTop < elementTop) {
         return settings.opacityStart;
       } else if (windowTop < elementBottom) {
-        return  (windowTop - elementTop) / (elementBottom - elementTop) * settings.opacityEnd;
+        var percentage = (windowTop - elementTop) / (elementBottom - elementTop);
+        return percentage * (settings.opacityEnd - settings.opacityStart) + settings.opacityStart;
       } else {
         return settings.opacityEnd;
       }

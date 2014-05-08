@@ -1272,9 +1272,9 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: inherit;
-  font-weight: 500;
-  line-height: 1.1;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  line-height: 1;
   color: inherit;
 }
 
@@ -1364,17 +1364,17 @@ h1,
 
 h2,
 .h2 {
-  font-size: 43px;
+  font-size: 42px;
 }
 
 h3,
 .h3 {
-  font-size: 34px;
+  font-size: 33px;
 }
 
 h4,
 .h4 {
-  font-size: 25px;
+  font-size: 27px;
 }
 
 h5,
@@ -7511,18 +7511,14 @@ button.close {
   }
 }
 
-.post {
-  padding-bottom: 60px;
-}
-
 .post .post-cover {
   position: relative;
   right: 0;
   left: 0;
   display: table;
   width: 100vw;
-  height: 70vw;
-  max-height: 100vh;
+  height: 74.691358vw;
+  max-height: 94vh;
 }
 
 .post .post-cover .post-cover-image {
@@ -7547,22 +7543,26 @@ button.close {
 
 .post .post-cover .post-header {
   display: table-cell;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 90px;
+  padding-bottom: 90px;
   text-align: center;
   vertical-align: bottom;
 }
 
 .post .post-cover .post-header .post-title {
+  margin-bottom: 8px;
   color: #fff;
 }
 
 .post .post-cover .post-header .post-subtitle {
+  margin-bottom: 0;
+  font-weight: 200;
   color: rgba(255, 255, 255, .65);
 }
 
 .post .post-details {
-  margin-top: 30px;
+  padding-top: 45px;
+  padding-bottom: 90px;
 }
 
 #post1 {
@@ -7575,17 +7575,12 @@ button.close {
 }
 
 #post2 {
-  color: #d3dad6;
-  background: #393735;
+  color: #a7704d;
+  background: #f0efe5;
 }
 
 #post2 .post-cover-image {
-  background-image: url('../../images/2-sardines.jpg');
-}
-
-h1 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 700;
+  background-image: url('../../images/2-daikon.jpg');
 }
 
 /*# sourceMappingURL=bootstrap.css.map */
