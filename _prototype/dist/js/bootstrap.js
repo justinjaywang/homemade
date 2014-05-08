@@ -2122,8 +2122,8 @@ if (typeof jQuery === 'undefined') { throw new Error('Bootstrap\'s JavaScript re
     image: '.post-cover-image',
     fader: '.post-cover-fader',
     fadeStart: 0,
-    fadeMid: 0.12,
-    fadeEnd: 0.84
+    fadeMid: 0.4,
+    fadeEnd: 0.4
   };
 
   $.fn.transitioner = function (options) {
