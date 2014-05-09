@@ -7,7 +7,7 @@
     position: relative;
     left: 0;
     right: 0;
-    display: table;
+    // display: table;
     width: 100vw;
     height: 74.691358vw;
     // max-height: 100vh;
@@ -30,17 +30,21 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: #000;
       opacity: 0;
     }
     & .post-header {
-      text-align: center;
-      display: table-cell;
-      vertical-align: bottom;
+      // text-align: center;
+      // display: table-cell;
+      // vertical-align: bottom;
       // vertical-align: middle;
-      padding-top: (@grid-gutter-width * 2);
-      padding-bottom: (@grid-gutter-width * 2);
-      color: @body-bg;
+      // padding-top: (@grid-gutter-width * 2);
+      // padding-bottom: (@grid-gutter-width * 2);
+      color: @text-color;
+      position: absolute;
+      width: 100vw;
+      left: 50%;
+      margin-left: -50vw;
+      bottom: 8%;
       & .post-title {
         margin-bottom: (@line-height-computed / 4);
         // text-transform: uppercase;
@@ -55,7 +59,7 @@
     }
   }
   & .post-details {
-    padding-top: (@grid-gutter-width * 1.5);
+    padding-top: (@grid-gutter-width * 2);
     padding-bottom: (@grid-gutter-width * 6);
     & .post-ingredients {
       margin: @line-height-computed;
@@ -63,32 +67,58 @@
   }
 }
 
+@post1-bg: rgb(139, 85, 51);
+@post2-bg: rgb(61, 30, 17);
+@post3-bg: rgb(74, 70, 75);
+@post4-bg: rgb(23, 20, 18);
+@post5-bg: rgb(172, 87, 32);
+
 #post1 {
   & .post-cover-image {
     background-image: url('../../images/1-wings.jpg');
   }
+  & .post-cover-fader {
+    background: @post1-bg;
+  }
+  background: @post1-bg;
 }
 
 #post2 {
   & .post-cover-image {
     background-image: url('../../images/2-chicken.jpg');
   }
+  & .post-cover-fader {
+    background: @post2-bg;
+  }
+  background: @post2-bg;
 }
 
 #post3 {
   & .post-cover-image {
     background-image: url('../../images/3-root.jpg');
   }
+  & .post-cover-fader {
+    background: @post3-bg;
+  }
+  background: @post3-bg;
 }
 
 #post4 {
   & .post-cover-image {
     background-image: url('../../images/4-brussels-sprouts.jpg');
   }
+  & .post-cover-fader {
+    background: @post4-bg;
+  }
+  background: @post4-bg;
 }
 
 #post5 {
   & .post-cover-image {
     background-image: url('../../images/5-pork-cutlet.jpg');
   }
+  & .post-cover-fader {
+    background: @post5-bg;
+  }
+  background: @post5-bg;
 }
