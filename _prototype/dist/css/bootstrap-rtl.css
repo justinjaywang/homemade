@@ -1159,7 +1159,7 @@ html {
 }
 
 body {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "PT Serif", Georgia, "Times New Roman", Times, serif;
   font-size: 20px;
   line-height: 1.6;
   color: #555;
@@ -7544,11 +7544,12 @@ button.close {
 
 .post .post-cover .post-header {
   display: table-cell;
-  padding-top: 90px;
-  padding-bottom: 90px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   color: #fff;
   text-align: center;
   vertical-align: bottom;
+  vertical-align: middle;
 }
 
 .post .post-cover .post-header .post-title {
@@ -7562,8 +7563,8 @@ button.close {
 }
 
 .post .post-details {
-  padding-top: 90px;
-  padding-bottom: 90px;
+  padding-top: 60px;
+  padding-bottom: 240px;
 }
 
 #post1 .post-cover-image {
