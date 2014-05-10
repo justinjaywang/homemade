@@ -2133,7 +2133,7 @@ if (typeof jQuery === 'undefined') { throw new Error('Bootstrap\'s JavaScript re
 
     var pos2TextOpacity = function(windowTop, windowBottom, postTop, postBottom) {
       
-      var windowMid = (windowTop + windowBottom) / 2;
+      var windowMid = (3*windowTop + windowBottom) / 4;
 
       if (windowMid < postTop) { // not scrolled past halfway
         return settings.textOpacityMin;
