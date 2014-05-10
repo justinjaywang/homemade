@@ -22,6 +22,8 @@
     imageOpacityEnd: 0,
     headerBottomStart: 10,
     headerBottomEnd: -4,
+    textOpacityMax: 1,
+    textOpacityMin: 0,
     accel: 1.5
   };
 
@@ -118,11 +120,11 @@
       var windowMid = (windowTop + windowBottom) / 2;
 
       if (windowMid < postTop) { // not scrolled past halfway
-        return 0;
+        return settings.textOpacityMin;
       } else if (windowMid < postBottom) {
-        return 1;
+        return settings.textOpacityMax;
       } else {
-        return 0;
+        return settings.textOpacityMin;
       }
 
     };
