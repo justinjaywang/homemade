@@ -9,7 +9,6 @@
     right: 0;
     width: 100vw;
     height: 74.691358vw;
-    // max-height: 100vh;
     max-height: 94vh;
     & .post-cover-image {
       -webkit-background-size: cover;
@@ -33,22 +32,18 @@
       background: @body-bg;
     }
     & .post-header {
-      // text-align: center;
       position: absolute;
       width: 100vw;
       left: 50%;
       margin-left: -50vw;
       bottom: 8%;
-      // text-shadow: 1px 4px 10px rgba(0, 0, 0, 0.3);
       & .post-title {
-        margin-bottom: (@line-height-computed / 4);
+        margin-bottom: (@line-height-computed * 2 / 3);
         letter-spacing: -0.02em;
       }
-      & .post-subtitle {
-        margin-bottom: 0;
-        font-weight: 200;
-        opacity: 0.65;
-        display: none;
+      & .post-title-rule {
+        border-top: 4px solid @gray-lighter;
+        width: 60px;
       }
     }
   }
@@ -58,12 +53,19 @@
     & .post-ingredients {
       margin: @line-height-computed;
     }
+    & .post-tags {
+      margin-top: @line-height-computed;
+      color: @gray-light;
+      font-style: italic;
+    }
   }
   & .post-header, & .post-details {
     -webkit-transition: opacity 0.3s ease-out;
     transition: opacity 0.3s ease-out;
   }
 }
+
+// Post images
 
 #post1 {
   & .post-cover-image {
@@ -92,5 +94,14 @@
 #post5 {
   & .post-cover-image {
     background-image: url('../../images/5-pork-cutlet.jpg');
+  }
+}
+
+.post-tags li {
+  & a:before {
+    content: '#';
+  }
+  & a {
+    color: darken(@gray-lighter, 15%);
   }
 }
