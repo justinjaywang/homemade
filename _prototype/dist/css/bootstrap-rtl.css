@@ -7550,15 +7550,13 @@ button.close {
 }
 
 .post .post-cover .post-header .post-title {
-  margin-bottom: 9.5px;
+  margin-bottom: 25.33333333px;
   letter-spacing: -.02em;
 }
 
-.post .post-cover .post-header .post-subtitle {
-  display: none;
-  margin-bottom: 0;
-  font-weight: 200;
-  opacity: .65;
+.post .post-cover .post-header .post-title-rule {
+  width: 60px;
+  border-top: 4px solid #eee;
 }
 
 .post .post-details {
@@ -7570,6 +7568,12 @@ button.close {
   margin: 38px;
 }
 
+.post .post-details .post-tags {
+  margin-top: 38px;
+  font-style: italic;
+  color: #999;
+}
+
 .post .post-header,
 .post .post-details {
   -webkit-transition: opacity .3s ease-out;
@@ -7578,23 +7582,23 @@ button.close {
 }
 
 #post1 .post-cover-image {
-  background-image: url('../../images/1-wings.jpg');
+  background-image: url('../../images/1-root-veggies.jpg');
 }
 
 #post2 .post-cover-image {
-  background-image: url('../../images/2-chicken.jpg');
+  background-image: url('../../images/2-brussels-sprouts.jpg');
 }
 
 #post3 .post-cover-image {
-  background-image: url('../../images/3-root.jpg');
+  background-image: url('../../images/3-pork-cutlet.jpg');
 }
 
-#post4 .post-cover-image {
-  background-image: url('../../images/4-brussels-sprouts.jpg');
+.post-tags li a:before {
+  content: '#';
 }
 
-#post5 .post-cover-image {
-  background-image: url('../../images/5-pork-cutlet.jpg');
+.post-tags li a {
+  color: #c8c8c8;
 }
 
 /*# sourceMappingURL=bootstrap.css.map */
