@@ -1162,8 +1162,8 @@ body {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 24px;
   line-height: 1.6;
-  color: #fff;
-  background-color: #222;
+  color: #222;
+  background-color: #fff;
 }
 
 input,
@@ -1220,7 +1220,7 @@ img {
   height: auto;
   padding: 4px;
   line-height: 1.6;
-  background-color: #222;
+  background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 4px;
   -webkit-transition: all .2s ease-in-out;
@@ -2738,7 +2738,7 @@ th {
 }
 
 .table .table {
-  background-color: #222;
+  background-color: #fff;
 }
 
 .table-condensed > thead > tr > th,
@@ -3339,7 +3339,7 @@ select[multiple].input-lg {
   display: block;
   margin-top: 5px;
   margin-bottom: 10px;
-  color: #fff;
+  color: #626262;
 }
 
 @media (min-width: 768px) {
@@ -4499,7 +4499,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-tabs > li.active > a:focus {
   color: #555;
   cursor: default;
-  background-color: #222;
+  background-color: #fff;
   border: 1px solid #ddd;
   border-bottom-color: transparent;
 }
@@ -4554,7 +4554,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .nav-tabs.nav-justified > .active > a,
   .nav-tabs.nav-justified > .active > a:hover,
   .nav-tabs.nav-justified > .active > a:focus {
-    border-bottom-color: #222;
+    border-bottom-color: #fff;
   }
 }
 
@@ -4639,7 +4639,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .nav-tabs-justified > .active > a,
   .nav-tabs-justified > .active > a:hover,
   .nav-tabs-justified > .active > a:focus {
-    border-bottom-color: #222;
+    border-bottom-color: #fff;
   }
 }
 
@@ -5635,7 +5635,7 @@ a.list-group-item.active > .badge,
   padding: 4px;
   margin-bottom: 38px;
   line-height: 1.6;
-  background-color: #222;
+  background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 4px;
   -webkit-transition: all .2s ease-in-out;
@@ -5657,7 +5657,7 @@ a.thumbnail.active {
 
 .thumbnail .caption {
   padding: 9px;
-  color: #fff;
+  color: #222;
 }
 
 .alert {
@@ -7537,6 +7537,7 @@ button.close {
   right: 0;
   width: 100%;
   height: 100%;
+  background: #fff;
   opacity: 0;
 }
 
@@ -7576,89 +7577,24 @@ button.close {
           transition: opacity .3s ease-out;
 }
 
-#post1 {
-  background: #8b5533;
-}
-
 #post1 .post-cover-image {
   background-image: url('../../images/1-wings.jpg');
-}
-
-#post1 .post-cover-fader {
-  background: #8b5533;
-}
-
-#post1 .post-header,
-#post1 .post-details {
-  color: #8b5533;
-}
-
-#post2 {
-  background: #3d1e11;
 }
 
 #post2 .post-cover-image {
   background-image: url('../../images/2-chicken.jpg');
 }
 
-#post2 .post-cover-fader {
-  background: #3d1e11;
-}
-
-#post2 .post-header,
-#post2 .post-details {
-  color: #3d1e11;
-}
-
-#post3 {
-  background: #fff;
-}
-
 #post3 .post-cover-image {
   background-image: url('../../images/3-root.jpg');
-}
-
-#post3 .post-cover-fader {
-  background: #fff;
-}
-
-#post3 .post-header,
-#post3 .post-details {
-  color: #222;
-}
-
-#post4 {
-  background: #fff;
 }
 
 #post4 .post-cover-image {
   background-image: url('../../images/4-brussels-sprouts.jpg');
 }
 
-#post4 .post-cover-fader {
-  background: #fff;
-}
-
-#post4 .post-header,
-#post4 .post-details {
-  color: #222;
-}
-
-#post5 {
-  background: #fff;
-}
-
 #post5 .post-cover-image {
   background-image: url('../../images/5-pork-cutlet.jpg');
-}
-
-#post5 .post-cover-fader {
-  background: #fff;
-}
-
-#post5 .post-header,
-#post5 .post-details {
-  color: #222;
 }
 
 /*# sourceMappingURL=bootstrap.css.map */

@@ -30,6 +30,7 @@
       width: 100%;
       height: 100%;
       opacity: 0;
+      background: @body-bg;
     }
     & .post-header {
       // text-align: center;
@@ -64,38 +65,9 @@
   }
 }
 
-@post1-bg: rgb(139, 85, 51);
-@post1-color: rgb(139, 85, 51);
-
-@post2-bg: rgb(61, 30, 17);
-@post2-color: rgb(61, 30, 17);
-
-// @post3-bg: rgb(196, 195, 204);
-// @post3-color: rgb(0, 0, 0);
-@post3-bg: @text-color;
-@post3-color: @body-bg;
-
-// @post4-bg: rgb(73, 67, 71);
-// @post4-color: rgb(255, 255, 255);
-@post4-bg: @text-color;
-@post4-color: @body-bg;
-
-// @post5-bg: rgb(116, 61, 27);
-// @post5-bg: rgb(0, 0, 0);
-// @post5-color: rgb(255, 255, 255);
-@post5-bg: @text-color;
-@post5-color: @body-bg;
-
 #post1 {
   & .post-cover-image {
     background-image: url('../../images/1-wings.jpg');
-  }
-  & .post-cover-fader {
-    background: @post1-bg;
-  }
-  background: @post1-bg;
-  & .post-header, & .post-details {
-    color: @post1-color;
   }
 }
 
@@ -103,25 +75,11 @@
   & .post-cover-image {
     background-image: url('../../images/2-chicken.jpg');
   }
-  & .post-cover-fader {
-    background: @post2-bg;
-  }
-  background: @post2-bg;
-  & .post-header, & .post-details {
-    color: @post2-color;
-  }
 }
 
 #post3 {
   & .post-cover-image {
     background-image: url('../../images/3-root.jpg');
-  }
-  & .post-cover-fader {
-    background: @post3-bg;
-  }
-  background: @post3-bg;
-  & .post-header, & .post-details {
-    color: @post3-color;
   }
 }
 
@@ -129,24 +87,10 @@
   & .post-cover-image {
     background-image: url('../../images/4-brussels-sprouts.jpg');
   }
-  & .post-cover-fader {
-    background: @post4-bg;
-  }
-  background: @post4-bg;
-  & .post-header, & .post-details {
-    color: @post4-color;
-  }
 }
 
 #post5 {
   & .post-cover-image {
     background-image: url('../../images/5-pork-cutlet.jpg');
-  }
-  & .post-cover-fader {
-    background: @post5-bg;
-  }
-  background: @post5-bg;
-  & .post-header, & .post-details {
-    color: @post5-color;
   }
 }
