@@ -7562,15 +7562,22 @@ button.close {
 
 .post .post-details {
   padding-top: 60px;
-  padding-bottom: 120px;
+  padding-bottom: 180px;
 }
 
 .post .post-details .post-ingredients {
   margin: 32px;
 }
 
+.post .post-header,
+.post .post-details {
+  -webkit-transition: opacity .2s ease-out;
+       -o-transition: opacity .2s ease-out;
+          transition: opacity .2s ease-out;
+}
+
 #post1 {
-  background: #f00;
+  background: #8b5533;
 }
 
 #post1 .post-cover-image {
@@ -7578,11 +7585,11 @@ button.close {
 }
 
 #post1 .post-cover-fader {
-  background: #f00;
+  background: #8b5533;
 }
 
 #post2 {
-  background: #00f;
+  background: #3d1e11;
 }
 
 #post2 .post-cover-image {
@@ -7590,11 +7597,11 @@ button.close {
 }
 
 #post2 .post-cover-fader {
-  background: #00f;
+  background: #3d1e11;
 }
 
 #post3 {
-  background: #ffa500;
+  background: #4a464b;
 }
 
 #post3 .post-cover-image {
@@ -7602,11 +7609,11 @@ button.close {
 }
 
 #post3 .post-cover-fader {
-  background: #ffa500;
+  background: #4a464b;
 }
 
 #post4 {
-  background: #333;
+  background: #171412;
 }
 
 #post4 .post-cover-image {
@@ -7614,11 +7621,11 @@ button.close {
 }
 
 #post4 .post-cover-fader {
-  background: #333;
+  background: #171412;
 }
 
 #post5 {
-  background: #a52a2a;
+  background: #743d1b;
 }
 
 #post5 .post-cover-image {
@@ -7626,7 +7633,7 @@ button.close {
 }
 
 #post5 .post-cover-fader {
-  background: #a52a2a;
+  background: #743d1b;
 }
 
 /*# sourceMappingURL=bootstrap.css.map */

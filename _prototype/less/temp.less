@@ -47,8 +47,6 @@
       bottom: 8%;
       & .post-title {
         margin-bottom: (@line-height-computed / 4);
-        // text-transform: uppercase;
-        // font-style: italic;
       }
       & .post-subtitle {
         margin-bottom: 0;
@@ -65,13 +63,17 @@
       margin: @line-height-computed;
     }
   }
+  & .post-header, & .post-details {
+    -webkit-transition: opacity 0.2s ease-out;
+    transition: opacity 0.2s ease-out;
+  }
 }
 
 @post1-bg: rgb(139, 85, 51);
 @post2-bg: rgb(61, 30, 17);
 @post3-bg: rgb(74, 70, 75);
 @post4-bg: rgb(23, 20, 18);
-@post5-bg: rgb(172, 87, 32);
+@post5-bg: rgb(116, 61, 27);
 
 #post1 {
   & .post-cover-image {
