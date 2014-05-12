@@ -6125,6 +6125,7 @@ button.close {
   border-top: 4px solid rgba(0, 0, 0, 0.2);
   width: 42px;
   margin-bottom: 17px;
+  display: none;
 }
 #post1 .post-cover-image {
   background-image: url('../../images/1-root-veggies.jpg');
